@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_one"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.dell.ynf_xiangmu.OneActivity">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/toolbar"
+            android:background="@color/colorAccent">
+        </android.support.v7.widget.Toolbar>
+
+        <com.youth.banner.Banner
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:id="@+id/banner"
+            >
+
+
+        </com.youth.banner.Banner>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/chu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/chu"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="每日签到"
+
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/qiao"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/qiao"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="积分商城"
+                    />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/you"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/you"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="兑换专区"
+                    />
+            </LinearLayout>
+
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/li"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/li"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="真伪查询"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TextView
+                android:id="@+id/selecter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="查看所有的商品"
+
+                android:layout_gravity="center"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progressbar"
+
+                android:layout_gravity="center_horizontal"
+                />
+
+        </FrameLayout>
+  <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="4"
+            android:layout_marginTop="250dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/selector1"
+                android:button="@null"
+                android:text="首页"
+                android:gravity="center_horizontal"
+                android:layout_weight="1"
+
+                android:textColor="@color/text_color"
+                android:id="@+id/shouye" />
+
+            <RadioButton
+                android:id="@+id/fenlei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/selector2"
+                android:gravity="center_horizontal"
+                android:button="@null"
+                android:layout_weight="1"
+                android:text="分类"
+                android:textColor="@color/text_color"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/selector3"
+                android:gravity="center_horizontal"
+                android:button="@null"
+                android:id="@+id/gouwuche"
+                android:layout_weight="1"
+                android:text="购物车"
+                android:textColor="@color/text_color"
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:drawableTop="@drawable/selector4"
+                android:button="@null"
+                android:layout_weight="1"
+                android:id="@+id/wo"
+                android:text="我"
+                android:textColor="@color/text_color"
+                />
+
+
+
+        </RadioGroup>
+    </LinearLayout>
+
+
+</RelativeLayout>
